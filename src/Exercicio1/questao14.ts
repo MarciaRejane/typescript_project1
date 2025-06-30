@@ -1,10 +1,6 @@
-function impar(num: any): boolean {
-    function numero(value:any): value is number{
-        return typeof value === 'number';
-    }
-
-    if (numero(num)){
-        return num % 2 !==0;
+function impar(numero: number): boolean {
+    if (numero % 2 !== 0){
+        return true;
     } else {
         return false;
     }
@@ -12,4 +8,4 @@ function impar(num: any): boolean {
 }
 
 console.log(impar(50));
-console.log()
+console.log(impar(15));
