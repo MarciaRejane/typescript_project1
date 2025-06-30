@@ -4,8 +4,6 @@ interface Car {
 }
 
 type Bus = {
-    make:string
-    model:string
     payloadCapacity:number
 };
 
