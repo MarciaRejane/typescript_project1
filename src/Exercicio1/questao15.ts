@@ -1,8 +1,13 @@
-let array: [number, string] = [30, "João"];
-
-
-const numeros = array[0] as number;
-const texto = array[1] as string;
-
-console.log("numero:", numeros );
-console.log("strings:", texto);
+let lista: (number| string | boolean)[] = [
+    56,"Olá", false
+];
+lista.forEach((item) => {
+    if(typeof item === "string") {
+        console.log(`string: ${item.trim()}`);
+    } else if ( typeof item === "number") {
+        console.log(`Número: ${item.toFixed(2)}`); 
+        } else if(typeof item === "boolean") {
+            console.log(`booleano: ${item ?"verdadeiro" : "Falso"}`);
+        }
+    
+});
